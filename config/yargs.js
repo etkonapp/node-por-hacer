@@ -1,17 +1,14 @@
-let descripcion = {
-    descripcion: {
-        demand: true,
-        alias: 'd',
-        desc: 'Descripcion de la tarea por hacer'
-    }
+const descripcion = {
+    demand: true,
+    alias: 'd',
+    desc: 'Descripcion de la tarea por hacer'
 };
 
-let completado = {
-    completado: {
-        default: true,
-        alias: 'c',
-        desc: 'Marca como completado o pendiente la tarea'
-    }
+const completado = {
+    default: true,
+    alias: 'c',
+    desc: 'Marca como completado o pendiente la tarea'
+
 };
 
 

@@ -1,0 +1,35 @@
+let descripcion = {
+    descripcion: {
+        demand: true,
+        alias: 'd',
+        desc: 'Descripcion de la tarea por hacer'
+    }
+};
+
+let completado = {
+    completado: {
+        default: true,
+        alias: 'c',
+        desc: 'Marca como completado o pendiente la tarea'
+    }
+};
+
+
+
+const argv = require('yargs')
+    .command('crear', 'Creacion de una linea de To-Do', {
+        descripcion
+    })
+    .command('actualizar', 'Modifica el estado actual de una tarea', {
+        descripcion,
+        completado
+    })
+    .command('borrar', 'Elimina una tarea por Hcer', {
+        descripcion
+    })
+    .help()
+    .argv;
+
+module.exports = {
+    argv
+}
